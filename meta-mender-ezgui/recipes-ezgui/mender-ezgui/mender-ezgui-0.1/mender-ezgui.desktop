@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Mender Login
+Type=Application
+Exec=/usr/bin/python3 /etc/mender/ezgui/menderEzGui.py
+Terminal=false
+

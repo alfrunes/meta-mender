@@ -1,0 +1,928 @@
+--- Starting bitbake server pid 16379 at 2018-05-08 13:13:52.804362 ---
+Started bitbake server pid 16379
+DEBUG: Found bblayers.conf (/home/affe/mendersoftware/poky/build/conf/bblayers.conf)
+DEBUG: Adding layer /home/affe/mendersoftware/poky/openembedded-core/meta
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-poky
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-yocto-bsp
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-toradex-nxp
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-toradex-bsp-common
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-openembedded/meta-oe
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-openembedded/meta-python
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-qt5
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-freescale
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-freescale-3rdparty
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-ezgui
+DEBUG: Adding layer /home/affe/mendersoftware/meta-mender/meta-mender-core
+DEBUG: Adding layer /home/affe/mendersoftware/meta-mender/meta-mender-toradex-nxp
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:741: including conf/abi_version.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:742: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:743: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:744: including conf/local.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:745: including conf/multiconfig/default.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:746: including conf/machine/colibri-imx7-mender.conf
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-toradex-nxp/conf/machine/colibri-imx7-mender.conf:6: including conf/machine/colibri-imx7.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale-3rdparty/conf/machine/colibri-imx7.conf:9: including conf/machine/include/imx-base.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:3: including conf/machine/include/fsl-default-settings.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:4: including conf/machine/include/fsl-default-versions.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:6: including conf/machine/include/utilities.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale-3rdparty/conf/machine/colibri-imx7.conf:10: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:747: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:748: including conf/distro/poky.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:100: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:101: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:102: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:749: including conf/distro/defaultsetup.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:750: including conf/documentation.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:751: including conf/licenses.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:752: including conf/sanity.conf
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/patch.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/terminal.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/staging.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/mirrors.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/utils.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/utility-tasks.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/metadata_scm.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/logging.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass (from configuration INHERITs:0)
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:255: including mender-setup-grub.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:256: including mender-setup-image.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:257: including mender-setup-install.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:258: including mender-setup-systemd.inc
+Entering server connection loop
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:259: including mender-setup-ubi.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:260: including mender-setup-uboot.inc
+DEBUG: Inheriting /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-full-ubi.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/packagedata.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/chrpath.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/insane.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/linuxloader.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/affe/mendersoftware/poky/build/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/affe/mendersoftware/poky/build/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'prefile': [], 'abort': True, 'debug': 0, 'server_timeout': None, 'invalidate_stamp': None, 'debug_domains': [], 'force': False, 'postfile': [], 'verbose': False, 'dry_run': False, 'profile': False, 'extra_assume_provided': [], 'dump_signatures': []}, {'QT_LINUX_ACCESSIBILITY_ALWAYS_ON': '1', 'UNITY_HAS_3D_SUPPORT': 'true', 'UPSTART_JOB': 'unity-settings-daemon', 'GNOME_KEYRING_PID': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop', 'GNOME_KEYRING_CONTROL': '', 'GDM_LANG': 'en_US', 'PWD': '/home/affe/mendersoftware/meta-mender/meta-mender-demo/recipes-mender/example-state-scripts/files', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'OLDPWD': '/home/affe/mendersoftware/meta-mender/meta-mender-demo/recipes-mender/example-state-scripts', 'WINDOWID': '77594634', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LC_TIME': 'nb_NO.UTF-8', 'UPSTART_EVENTS': 'started starting', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-IWr6W55r2y', 'UNITY_DEFAULT_PROFILE': 'unity', 'LC_NAME': 'nb_NO.UTF-8', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'GPG_AGENT_INFO': '/home/affe/.gnupg/S.gpg-agent:0:1', 'XDG_SEAT': 'seat0', 'LC_NUMERIC': 'nb_NO.UTF-8', 'DISPLAY': ':0', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'DESKTOP_SESSION': 'ubuntu', 'LC_TELEPHONE': 'nb_NO.UTF-8', 'XAUTHORITY': '/home/affe/.Xauthority', 'HOME': '/home/affe', 'IM_CONFIG_PHASE': '1', 'UPSTART_INSTANCE': '', 'SESSIONTYPE': 'gnome-session', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'TERM': 'xterm-256color', 'LANGUAGE': 'en_US', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'GDMSESSION': 'ubuntu', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'XDG_SESSION_ID': 'c2', 'LC_IDENTIFICATION': 'nb_NO.UTF-8', 'LC_MONETARY': 'nb_NO.UTF-8', 'SHELL': '/bin/bash', 'VTE_VERSION': '4205', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'SESSION_MANAGER': 'local/affe:@/tmp/.ICE-unix/5601,unix/affe:/tmp/.ICE-unix/5601', 'XDG_CURRENT_DESKTOP': 'Unity', 'PATH': '/home/affe/mendersoftware/poky/scripts:/home/affe/mendersoftware/poky/bitbake/bin:/usr/local/go/bin:/home/affe/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nb_NO.UTF-8', 'LC_ALL': 'en_US.UTF-8', 'JOB': 'gnome-session', 'GTK_IM_MODULE': 'ibus', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg', 'BBPATH': '/home/affe/mendersoftware/poky/build', 'LC_MEASUREMENT': 'nb_NO.UTF-8', 'BUILDDIR': '/home/affe/mendersoftware/poky/build', 'QT_ACCESSIBILITY': '1', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'affe', '_': '/home/affe/mendersoftware/poky/bitbake/bin/bitbake', 'QT4_IM_MODULE': 'xim', 'LC_PAPER': 'nb_NO.UTF-8', 'XDG_SESSION_DESKTOP': 'ubuntu', 'LOGNAME': 'affe', 'UPSTART_SESSION': 'unix:abstract=/com/ubuntu/upstart-session/1000/5174', 'XMODIFIERS': '@im=ibus', 'SHLVL': '1', 'GTK_MODULES': 'gail:atk-bridge:unity-gtk-module', 'XDG_VTNR': '7', 'CLUTTER_IM_MODULE': 'xim', 'XDG_SESSION_TYPE': 'x11', 'INSTANCE': 'Unity', 'LANG': 'en_US.UTF-8', 'QT_IM_MODULE': 'ibus', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/affe', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'GTK2_MODULES': 'overlay-scrollbar', 'XDG_RUNTIME_DIR': '/run/user/1000', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'XDG_MENU_PREFIX': 'gnome-', 'COMPIZ_CONFIG_PROFILE': 'ubuntu'}, ['/home/affe/mendersoftware/poky/bitbake/bin/bitbake', 'mender-ezgui']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['buildTargets', ['mender-ezgui'], 'build']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 23879 at 2018-05-08 13:15:43.492555 ---
+Started bitbake server pid 23879
+DEBUG: Found bblayers.conf (/home/affe/mendersoftware/poky/build/conf/bblayers.conf)
+DEBUG: Adding layer /home/affe/mendersoftware/poky/openembedded-core/meta
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-poky
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-yocto-bsp
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-toradex-nxp
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-toradex-bsp-common
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-openembedded/meta-oe
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-openembedded/meta-python
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-qt5
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-freescale
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-freescale-3rdparty
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-ezgui
+DEBUG: Adding layer /home/affe/mendersoftware/meta-mender/meta-mender-core
+DEBUG: Adding layer /home/affe/mendersoftware/meta-mender/meta-mender-toradex-nxp
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:741: including conf/abi_version.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:742: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:743: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:744: including conf/local.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:745: including conf/multiconfig/default.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:746: including conf/machine/colibri-imx7-mender.conf
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-toradex-nxp/conf/machine/colibri-imx7-mender.conf:6: including conf/machine/colibri-imx7.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale-3rdparty/conf/machine/colibri-imx7.conf:9: including conf/machine/include/imx-base.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:3: including conf/machine/include/fsl-default-settings.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:4: including conf/machine/include/fsl-default-versions.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:6: including conf/machine/include/utilities.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale-3rdparty/conf/machine/colibri-imx7.conf:10: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:747: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:748: including conf/distro/poky.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:100: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:101: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:102: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:749: including conf/distro/defaultsetup.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:750: including conf/documentation.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:751: including conf/licenses.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:752: including conf/sanity.conf
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/patch.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/terminal.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/staging.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/mirrors.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/utils.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/utility-tasks.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/metadata_scm.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/logging.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass (from configuration INHERITs:0)
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:255: including mender-setup-grub.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:256: including mender-setup-image.inc
+Entering server connection loop
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:257: including mender-setup-install.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:258: including mender-setup-systemd.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:259: including mender-setup-ubi.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:260: including mender-setup-uboot.inc
+DEBUG: Inheriting /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-full-ubi.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/packagedata.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/chrpath.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/insane.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/linuxloader.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/affe/mendersoftware/poky/build/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/affe/mendersoftware/poky/build/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'debug_domains': [], 'verbose': False, 'prefile': [], 'invalidate_stamp': None, 'force': False, 'dump_signatures': [], 'dry_run': False, 'server_timeout': None, 'extra_assume_provided': [], 'profile': False, 'debug': 0, 'abort': True, 'postfile': []}, {'GDMSESSION': 'ubuntu', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'GDM_LANG': 'en_US', 'LC_MEASUREMENT': 'nb_NO.UTF-8', 'UNITY_HAS_3D_SUPPORT': 'true', 'LC_ALL': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'GTK2_MODULES': 'overlay-scrollbar', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop', 'GTK_IM_MODULE': 'ibus', 'QT_LINUX_ACCESSIBILITY_ALWAYS_ON': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-IWr6W55r2y', 'GTK_MODULES': 'gail:atk-bridge:unity-gtk-module', 'SESSIONTYPE': 'gnome-session', 'BUILDDIR': '/home/affe/mendersoftware/poky/build', 'WINDOWID': '77594634', 'LC_TIME': 'nb_NO.UTF-8', 'QT_ACCESSIBILITY': '1', 'INSTANCE': 'Unity', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'OLDPWD': '/home/affe/mendersoftware/meta-mender/meta-mender-demo/recipes-mender/example-state-scripts', 'XDG_MENU_PREFIX': 'gnome-', 'CLUTTER_IM_MODULE': 'xim', 'HOME': '/home/affe', 'LANGUAGE': 'en_US', 'COMPIZ_CONFIG_PROFILE': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_ID': 'c2', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'LC_IDENTIFICATION': 'nb_NO.UTF-8', 'XAUTHORITY': '/home/affe/.Xauthority', 'UPSTART_EVENTS': 'started starting', 'BBPATH': '/home/affe/mendersoftware/poky/build', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'XDG_CURRENT_DESKTOP': 'Unity', 'LOGNAME': 'affe', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/affe/mendersoftware/meta-mender/meta-mender-demo/recipes-mender/example-state-scripts/files', 'USER': 'affe', 'XDG_VTNR': '7', 'UNITY_DEFAULT_PROFILE': 'unity', 'LC_PAPER': 'nb_NO.UTF-8', 'IM_CONFIG_PHASE': '1', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'LC_NUMERIC': 'nb_NO.UTF-8', 'SESSION_MANAGER': 'local/affe:@/tmp/.ICE-unix/5601,unix/affe:/tmp/.ICE-unix/5601', 'XDG_SESSION_TYPE': 'x11', '_': '/home/affe/mendersoftware/poky/bitbake/bin/bitbake', 'QT4_IM_MODULE': 'xim', 'QT_IM_MODULE': 'ibus', 'XDG_SEAT': 'seat0', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg', 'LC_NAME': 'nb_NO.UTF-8', 'SHELL': '/bin/bash', 'PATH': '/home/affe/mendersoftware/poky/scripts:/home/affe/mendersoftware/poky/bitbake/bin:/usr/local/go/bin:/home/affe/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_MONETARY': 'nb_NO.UTF-8', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/affe', 'LC_ADDRESS': 'nb_NO.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'DESKTOP_SESSION': 'ubuntu', 'UPSTART_SESSION': 'unix:abstract=/com/ubuntu/upstart-session/1000/5174', 'UPSTART_JOB': 'unity-settings-daemon', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'SHLVL': '1', 'JOB': 'gnome-session', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TELEPHONE': 'nb_NO.UTF-8', 'GPG_AGENT_INFO': '/home/affe/.gnupg/S.gpg-agent:0:1', 'GNOME_KEYRING_CONTROL': '', 'GNOME_KEYRING_PID': '', 'LANG': 'en_US.UTF-8', 'VTE_VERSION': '4205', 'UPSTART_INSTANCE': '', 'DISPLAY': ':0'}, ['/home/affe/mendersoftware/poky/bitbake/bin/bitbake', 'mender-ezgui']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['buildTargets', ['mender-ezgui'], 'build']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 28222 at 2018-05-08 13:16:46.918396 ---
+Started bitbake server pid 28222
+DEBUG: Found bblayers.conf (/home/affe/mendersoftware/poky/build/conf/bblayers.conf)
+DEBUG: Adding layer /home/affe/mendersoftware/poky/openembedded-core/meta
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-poky
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-yocto-bsp
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-toradex-nxp
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-toradex-bsp-common
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-openembedded/meta-oe
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-openembedded/meta-python
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-qt5
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-freescale
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-freescale-3rdparty
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-ezgui
+DEBUG: Adding layer /home/affe/mendersoftware/meta-mender/meta-mender-core
+DEBUG: Adding layer /home/affe/mendersoftware/meta-mender/meta-mender-toradex-nxp
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:741: including conf/abi_version.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:742: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:743: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:744: including conf/local.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:745: including conf/multiconfig/default.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:746: including conf/machine/colibri-imx7-mender.conf
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-toradex-nxp/conf/machine/colibri-imx7-mender.conf:6: including conf/machine/colibri-imx7.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale-3rdparty/conf/machine/colibri-imx7.conf:9: including conf/machine/include/imx-base.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:3: including conf/machine/include/fsl-default-settings.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:4: including conf/machine/include/fsl-default-versions.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:6: including conf/machine/include/utilities.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale-3rdparty/conf/machine/colibri-imx7.conf:10: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:747: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:748: including conf/distro/poky.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:100: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:101: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:102: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:749: including conf/distro/defaultsetup.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:750: including conf/documentation.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:751: including conf/licenses.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:752: including conf/sanity.conf
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/patch.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/terminal.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/staging.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/mirrors.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/utils.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/utility-tasks.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/metadata_scm.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/logging.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass (from configuration INHERITs:0)
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:255: including mender-setup-grub.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:256: including mender-setup-image.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:257: including mender-setup-install.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:258: including mender-setup-systemd.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:259: including mender-setup-ubi.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:260: including mender-setup-uboot.inc
+DEBUG: Inheriting /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-full-ubi.bbclass (from configuration INHERITs:0)
+Entering server connection loop
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/packagedata.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/chrpath.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/insane.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/linuxloader.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/affe/mendersoftware/poky/build/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/affe/mendersoftware/poky/build/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'dump_signatures': [], 'server_timeout': None, 'postfile': [], 'debug_domains': [], 'prefile': [], 'dry_run': False, 'abort': True, 'force': False, 'profile': False, 'invalidate_stamp': None, 'verbose': False, 'extra_assume_provided': [], 'debug': 0}, {'INSTANCE': 'Unity', 'GPG_AGENT_INFO': '/home/affe/.gnupg/S.gpg-agent:0:1', 'SESSION_MANAGER': 'local/affe:@/tmp/.ICE-unix/5601,unix/affe:/tmp/.ICE-unix/5601', 'QT4_IM_MODULE': 'xim', 'XMODIFIERS': '@im=ibus', 'WINDOWID': '77594634', 'GTK_MODULES': 'gail:atk-bridge:unity-gtk-module', 'GDM_LANG': 'en_US', 'UPSTART_INSTANCE': '', 'LC_NAME': 'nb_NO.UTF-8', 'CLUTTER_IM_MODULE': 'xim', 'DESKTOP_SESSION': 'ubuntu', '_': '/home/affe/mendersoftware/poky/bitbake/bin/bitbake', 'BBPATH': '/home/affe/mendersoftware/poky/build', 'XDG_VTNR': '7', 'XDG_SESSION_DESKTOP': 'ubuntu', 'HOME': '/home/affe', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop', 'PWD': '/home/affe/mendersoftware/meta-mender/meta-mender-demo/recipes-mender/example-state-scripts/files', 'XAUTHORITY': '/home/affe/.Xauthority', 'LC_TIME': 'nb_NO.UTF-8', 'LC_IDENTIFICATION': 'nb_NO.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'OLDPWD': '/home/affe/mendersoftware/meta-mender/meta-mender-demo/recipes-mender/example-state-scripts', 'UNITY_DEFAULT_PROFILE': 'unity', 'IM_CONFIG_PHASE': '1', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'LC_TELEPHONE': 'nb_NO.UTF-8', 'LC_ADDRESS': 'nb_NO.UTF-8', 'LC_MEASUREMENT': 'nb_NO.UTF-8', 'VTE_VERSION': '4205', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'UPSTART_JOB': 'unity-settings-daemon', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USER': 'affe', 'GTK2_MODULES': 'overlay-scrollbar', 'QT_ACCESSIBILITY': '1', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'QT_IM_MODULE': 'ibus', 'SHLVL': '1', 'TERM': 'xterm-256color', 'XDG_SEAT': 'seat0', 'LC_PAPER': 'nb_NO.UTF-8', 'DISPLAY': ':0', 'COMPIZ_CONFIG_PROFILE': 'ubuntu', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_SESSION_TYPE': 'x11', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'JOB': 'gnome-session', 'LOGNAME': 'affe', 'GNOME_KEYRING_CONTROL': '', 'GNOME_KEYRING_PID': '', 'BUILDDIR': '/home/affe/mendersoftware/poky/build', 'XDG_SESSION_ID': 'c2', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/affe', 'LC_ALL': 'en_US.UTF-8', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'LANG': 'en_US.UTF-8', 'SESSIONTYPE': 'gnome-session', 'SHELL': '/bin/bash', 'XDG_MENU_PREFIX': 'gnome-', 'LANGUAGE': 'en_US', 'XDG_CURRENT_DESKTOP': 'Unity', 'LC_MONETARY': 'nb_NO.UTF-8', 'GTK_IM_MODULE': 'ibus', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-IWr6W55r2y', 'LC_NUMERIC': 'nb_NO.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'UPSTART_SESSION': 'unix:abstract=/com/ubuntu/upstart-session/1000/5174', 'QT_LINUX_ACCESSIBILITY_ALWAYS_ON': '1', 'GDMSESSION': 'ubuntu', 'UNITY_HAS_3D_SUPPORT': 'true', 'UPSTART_EVENTS': 'started starting', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg', 'PATH': '/home/affe/mendersoftware/poky/scripts:/home/affe/mendersoftware/poky/bitbake/bin:/usr/local/go/bin:/home/affe/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LESSCLOSE': '/usr/bin/lesspipe %s %s'}, ['/home/affe/mendersoftware/poky/bitbake/bin/bitbake', '-s', 'core-image-minimal']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['showVersions']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 4933 at 2018-05-08 13:19:04.541389 ---
+Started bitbake server pid 4933
+DEBUG: Found bblayers.conf (/home/affe/mendersoftware/poky/build/conf/bblayers.conf)
+DEBUG: Adding layer /home/affe/mendersoftware/poky/openembedded-core/meta
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-poky
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-yocto-bsp
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-toradex-nxp
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-toradex-bsp-common
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-openembedded/meta-oe
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-openembedded/meta-python
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-qt5
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-freescale
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-freescale-3rdparty
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-ezgui
+DEBUG: Adding layer /home/affe/mendersoftware/meta-mender/meta-mender-core
+DEBUG: Adding layer /home/affe/mendersoftware/meta-mender/meta-mender-toradex-nxp
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:741: including conf/abi_version.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:742: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:743: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:744: including conf/local.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:745: including conf/multiconfig/default.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:746: including conf/machine/colibri-imx7-mender.conf
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-toradex-nxp/conf/machine/colibri-imx7-mender.conf:6: including conf/machine/colibri-imx7.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale-3rdparty/conf/machine/colibri-imx7.conf:9: including conf/machine/include/imx-base.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:3: including conf/machine/include/fsl-default-settings.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:4: including conf/machine/include/fsl-default-versions.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:6: including conf/machine/include/utilities.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale-3rdparty/conf/machine/colibri-imx7.conf:10: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:747: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:748: including conf/distro/poky.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:100: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:101: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:102: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:749: including conf/distro/defaultsetup.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:750: including conf/documentation.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:751: including conf/licenses.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:752: including conf/sanity.conf
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/patch.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/terminal.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/staging.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/mirrors.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/utils.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/utility-tasks.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/metadata_scm.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/logging.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass (from configuration INHERITs:0)
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:255: including mender-setup-grub.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:256: including mender-setup-image.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:257: including mender-setup-install.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:258: including mender-setup-systemd.inc
+Entering server connection loop
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:259: including mender-setup-ubi.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:260: including mender-setup-uboot.inc
+DEBUG: Inheriting /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-full-ubi.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/packagedata.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/chrpath.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/insane.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/linuxloader.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/affe/mendersoftware/poky/build/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/affe/mendersoftware/poky/build/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'force': False, 'extra_assume_provided': [], 'invalidate_stamp': None, 'abort': True, 'dry_run': False, 'debug': 0, 'verbose': False, 'debug_domains': [], 'server_timeout': None, 'profile': False, 'dump_signatures': [], 'prefile': [], 'postfile': []}, {'UPSTART_INSTANCE': '', 'BUILDDIR': '/home/affe/mendersoftware/poky/build', 'XDG_SESSION_TYPE': 'x11', 'VTE_VERSION': '4205', 'LC_PAPER': 'nb_NO.UTF-8', 'UNITY_DEFAULT_PROFILE': 'unity', 'DISPLAY': ':0', 'COMPIZ_CONFIG_PROFILE': 'ubuntu', 'XDG_MENU_PREFIX': 'gnome-', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-IWr6W55r2y', 'QT_IM_MODULE': 'ibus', 'SHELL': '/bin/bash', 'GDM_LANG': 'en_US', 'QT_ACCESSIBILITY': '1', 'LC_ALL': 'en_US.UTF-8', 'IM_CONFIG_PHASE': '1', 'LC_ADDRESS': 'nb_NO.UTF-8', 'CLUTTER_IM_MODULE': 'xim', 'LOGNAME': 'affe', '_': '/home/affe/mendersoftware/poky/bitbake/bin/bitbake', 'HOME': '/home/affe', 'UNITY_HAS_3D_SUPPORT': 'true', 'DESKTOP_SESSION': 'ubuntu', 'GTK2_MODULES': 'overlay-scrollbar', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'XDG_SESSION_ID': 'c2', 'UPSTART_EVENTS': 'started starting', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/affe', 'UPSTART_SESSION': 'unix:abstract=/com/ubuntu/upstart-session/1000/5174', 'UPSTART_JOB': 'unity-settings-daemon', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'LC_TELEPHONE': 'nb_NO.UTF-8', 'GTK_IM_MODULE': 'ibus', 'XDG_VTNR': '7', 'INSTANCE': 'Unity', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'SESSION_MANAGER': 'local/affe:@/tmp/.ICE-unix/5601,unix/affe:/tmp/.ICE-unix/5601', 'LC_TIME': 'nb_NO.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg', 'LC_MONETARY': 'nb_NO.UTF-8', 'SHLVL': '1', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop', 'QT4_IM_MODULE': 'xim', 'LC_NUMERIC': 'nb_NO.UTF-8', 'JOB': 'gnome-session', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'OLDPWD': '/home/affe/mendersoftware/meta-mender/meta-mender-demo/recipes-mender/example-state-scripts', 'XMODIFIERS': '@im=ibus', 'LANG': 'en_US.UTF-8', 'LC_NAME': 'nb_NO.UTF-8', 'WINDOWID': '77594634', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SEAT': 'seat0', 'USER': 'affe', 'TERM': 'xterm-256color', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LC_MEASUREMENT': 'nb_NO.UTF-8', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'XDG_CURRENT_DESKTOP': 'Unity', 'BBPATH': '/home/affe/mendersoftware/poky/build', 'QT_LINUX_ACCESSIBILITY_ALWAYS_ON': '1', 'PWD': '/home/affe/mendersoftware/meta-mender/meta-mender-demo/recipes-mender/example-state-scripts/files', 'GPG_AGENT_INFO': '/home/affe/.gnupg/S.gpg-agent:0:1', 'LANGUAGE': 'en_US', 'XAUTHORITY': '/home/affe/.Xauthority', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'LC_IDENTIFICATION': 'nb_NO.UTF-8', 'GDMSESSION': 'ubuntu', 'GNOME_KEYRING_PID': '', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'SESSIONTYPE': 'gnome-session', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'GTK_MODULES': 'gail:atk-bridge:unity-gtk-module', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GNOME_KEYRING_CONTROL': '', 'PATH': '/home/affe/mendersoftware/poky/scripts:/home/affe/mendersoftware/poky/bitbake/bin:/usr/local/go/bin:/home/affe/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'}, ['/home/affe/mendersoftware/poky/bitbake/bin/bitbake', 'mender-ezgui']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['buildTargets', ['mender-ezgui'], 'build']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 13558 at 2018-05-08 13:20:32.618005 ---
+Started bitbake server pid 13558
+DEBUG: Found bblayers.conf (/home/affe/mendersoftware/poky/build/conf/bblayers.conf)
+DEBUG: Adding layer /home/affe/mendersoftware/poky/openembedded-core/meta
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-poky
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-yocto-bsp
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-toradex-nxp
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-toradex-bsp-common
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-openembedded/meta-oe
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-openembedded/meta-python
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-qt5
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-freescale
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-freescale-3rdparty
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-ezgui
+DEBUG: Adding layer /home/affe/mendersoftware/meta-mender/meta-mender-core
+DEBUG: Adding layer /home/affe/mendersoftware/meta-mender/meta-mender-toradex-nxp
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:741: including conf/abi_version.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:742: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:743: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:744: including conf/local.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:745: including conf/multiconfig/default.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:746: including conf/machine/colibri-imx7-mender.conf
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-toradex-nxp/conf/machine/colibri-imx7-mender.conf:6: including conf/machine/colibri-imx7.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale-3rdparty/conf/machine/colibri-imx7.conf:9: including conf/machine/include/imx-base.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:3: including conf/machine/include/fsl-default-settings.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:4: including conf/machine/include/fsl-default-versions.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:6: including conf/machine/include/utilities.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale-3rdparty/conf/machine/colibri-imx7.conf:10: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:747: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:748: including conf/distro/poky.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:100: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:101: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:102: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:749: including conf/distro/defaultsetup.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:750: including conf/documentation.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:751: including conf/licenses.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:752: including conf/sanity.conf
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/patch.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/terminal.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/staging.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/mirrors.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/utils.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/utility-tasks.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/metadata_scm.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/logging.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass (from configuration INHERITs:0)
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:255: including mender-setup-grub.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:256: including mender-setup-image.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:257: including mender-setup-install.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:258: including mender-setup-systemd.inc
+Entering server connection loop
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:259: including mender-setup-ubi.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:260: including mender-setup-uboot.inc
+DEBUG: Inheriting /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-full-ubi.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/packagedata.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/chrpath.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/insane.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/linuxloader.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/affe/mendersoftware/poky/build/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/affe/mendersoftware/poky/build/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'abort': True, 'debug_domains': [], 'verbose': False, 'invalidate_stamp': None, 'prefile': [], 'postfile': [], 'dump_signatures': [], 'profile': False, 'server_timeout': None, 'debug': 0, 'dry_run': False, 'force': False, 'extra_assume_provided': []}, {'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-IWr6W55r2y', 'XDG_MENU_PREFIX': 'gnome-', 'SESSION_MANAGER': 'local/affe:@/tmp/.ICE-unix/5601,unix/affe:/tmp/.ICE-unix/5601', 'TERM': 'xterm-256color', 'GNOME_KEYRING_CONTROL': '', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'UPSTART_INSTANCE': '', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LC_TELEPHONE': 'nb_NO.UTF-8', 'SHLVL': '1', 'VTE_VERSION': '4205', 'DESKTOP_SESSION': 'ubuntu', 'LC_IDENTIFICATION': 'nb_NO.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANGUAGE': 'en_US', 'LOGNAME': 'affe', 'UPSTART_JOB': 'unity-settings-daemon', 'XDG_SESSION_ID': 'c2', 'HOME': '/home/affe', 'XAUTHORITY': '/home/affe/.Xauthority', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/affe', 'USER': 'affe', 'PATH': '/home/affe/mendersoftware/poky/scripts:/home/affe/mendersoftware/poky/bitbake/bin:/usr/local/go/bin:/home/affe/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'IM_CONFIG_PHASE': '1', 'XDG_CURRENT_DESKTOP': 'Unity', 'BBPATH': '/home/affe/mendersoftware/poky/build', 'PWD': '/home/affe/mendersoftware/meta-mender/meta-mender-demo/recipes-mender/example-state-scripts/files', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'XDG_SEAT': 'seat0', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'UNITY_DEFAULT_PROFILE': 'unity', 'LC_PAPER': 'nb_NO.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg', 'BUILDDIR': '/home/affe/mendersoftware/poky/build', 'UPSTART_SESSION': 'unix:abstract=/com/ubuntu/upstart-session/1000/5174', 'QT4_IM_MODULE': 'xim', 'UPSTART_EVENTS': 'started starting', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'JOB': 'gnome-session', 'QT_IM_MODULE': 'ibus', 'COMPIZ_CONFIG_PROFILE': 'ubuntu', 'LC_TIME': 'nb_NO.UTF-8', 'DISPLAY': ':0', 'XDG_VTNR': '7', 'SHELL': '/bin/bash', 'LC_NUMERIC': 'nb_NO.UTF-8', 'XDG_SESSION_DESKTOP': 'ubuntu', 'WINDOWID': '77594634', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop', 'OLDPWD': '/home/affe/mendersoftware/meta-mender/meta-mender-demo/recipes-mender/example-state-scripts', 'CLUTTER_IM_MODULE': 'xim', 'QT_LINUX_ACCESSIBILITY_ALWAYS_ON': '1', '_': '/home/affe/mendersoftware/poky/bitbake/bin/bitbake', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'LC_ADDRESS': 'nb_NO.UTF-8', 'GTK2_MODULES': 'overlay-scrollbar', 'GPG_AGENT_INFO': '/home/affe/.gnupg/S.gpg-agent:0:1', 'GTK_MODULES': 'gail:atk-bridge:unity-gtk-module', 'QT_ACCESSIBILITY': '1', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ALL': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'LC_MONETARY': 'nb_NO.UTF-8', 'SESSIONTYPE': 'gnome-session', 'GTK_IM_MODULE': 'ibus', 'LC_NAME': 'nb_NO.UTF-8', 'LC_MEASUREMENT': 'nb_NO.UTF-8', 'LANG': 'en_US.UTF-8', 'GDM_LANG': 'en_US', 'INSTANCE': 'Unity', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'GDMSESSION': 'ubuntu', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'UNITY_HAS_3D_SUPPORT': 'true', 'GNOME_KEYRING_PID': ''}, ['/home/affe/mendersoftware/poky/bitbake/bin/bitbake', 'mender-ezgui']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['buildTargets', ['mender-ezgui'], 'build']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 19935 at 2018-05-08 13:22:05.550572 ---
+Started bitbake server pid 19935
+DEBUG: Found bblayers.conf (/home/affe/mendersoftware/poky/build/conf/bblayers.conf)
+DEBUG: Adding layer /home/affe/mendersoftware/poky/openembedded-core/meta
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-poky
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-yocto-bsp
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-toradex-nxp
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-toradex-bsp-common
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-openembedded/meta-oe
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-openembedded/meta-python
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-qt5
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-freescale
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-freescale-3rdparty
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-ezgui
+DEBUG: Adding layer /home/affe/mendersoftware/meta-mender/meta-mender-core
+DEBUG: Adding layer /home/affe/mendersoftware/meta-mender/meta-mender-toradex-nxp
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:741: including conf/abi_version.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:742: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:743: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:744: including conf/local.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:745: including conf/multiconfig/default.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:746: including conf/machine/colibri-imx7-mender.conf
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-toradex-nxp/conf/machine/colibri-imx7-mender.conf:6: including conf/machine/colibri-imx7.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale-3rdparty/conf/machine/colibri-imx7.conf:9: including conf/machine/include/imx-base.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:3: including conf/machine/include/fsl-default-settings.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:4: including conf/machine/include/fsl-default-versions.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:6: including conf/machine/include/utilities.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale-3rdparty/conf/machine/colibri-imx7.conf:10: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:747: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:748: including conf/distro/poky.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:100: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:101: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:102: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:749: including conf/distro/defaultsetup.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:750: including conf/documentation.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:751: including conf/licenses.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:752: including conf/sanity.conf
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/patch.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/terminal.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/staging.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/mirrors.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/utils.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/utility-tasks.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/metadata_scm.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/logging.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass (from configuration INHERITs:0)
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:255: including mender-setup-grub.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:256: including mender-setup-image.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:257: including mender-setup-install.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:258: including mender-setup-systemd.inc
+Entering server connection loop
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:259: including mender-setup-ubi.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:260: including mender-setup-uboot.inc
+DEBUG: Inheriting /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-full-ubi.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/packagedata.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/chrpath.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/insane.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/linuxloader.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/affe/mendersoftware/poky/build/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/affe/mendersoftware/poky/build/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'postfile': [], 'abort': True, 'dump_signatures': [], 'verbose': False, 'prefile': [], 'server_timeout': None, 'force': False, 'extra_assume_provided': [], 'profile': False, 'invalidate_stamp': None, 'debug': 0, 'dry_run': False, 'debug_domains': []}, {'XAUTHORITY': '/home/affe/.Xauthority', 'QT4_IM_MODULE': 'xim', 'LC_NUMERIC': 'nb_NO.UTF-8', 'VTE_VERSION': '4205', 'XDG_SESSION_ID': 'c2', 'XDG_SESSION_DESKTOP': 'ubuntu', 'DISPLAY': ':0', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'TERM': 'xterm-256color', 'XDG_VTNR': '7', 'XDG_CURRENT_DESKTOP': 'Unity', 'LC_MONETARY': 'nb_NO.UTF-8', 'USER': 'affe', 'OLDPWD': '/home/affe/mendersoftware/meta-mender/meta-mender-demo/recipes-mender/example-state-scripts', 'UPSTART_SESSION': 'unix:abstract=/com/ubuntu/upstart-session/1000/5174', 'LC_TELEPHONE': 'nb_NO.UTF-8', 'HOME': '/home/affe', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'LOGNAME': 'affe', 'LC_PAPER': 'nb_NO.UTF-8', 'GPG_AGENT_INFO': '/home/affe/.gnupg/S.gpg-agent:0:1', 'IM_CONFIG_PHASE': '1', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg', 'SESSION_MANAGER': 'local/affe:@/tmp/.ICE-unix/5601,unix/affe:/tmp/.ICE-unix/5601', 'SHLVL': '1', 'GNOME_KEYRING_CONTROL': '', 'CLUTTER_IM_MODULE': 'xim', 'WINDOWID': '77594634', 'JOB': 'gnome-session', 'LC_IDENTIFICATION': 'nb_NO.UTF-8', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/affe', 'PATH': '/home/affe/mendersoftware/poky/scripts:/home/affe/mendersoftware/poky/bitbake/bin:/usr/local/go/bin:/home/affe/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'UPSTART_EVENTS': 'started starting', 'QT_IM_MODULE': 'ibus', 'XMODIFIERS': '@im=ibus', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SHELL': '/bin/bash', 'UPSTART_JOB': 'unity-settings-daemon', 'GNOME_KEYRING_PID': '', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'BUILDDIR': '/home/affe/mendersoftware/poky/build', 'PWD': '/home/affe/mendersoftware/meta-mender/meta-mender-demo/recipes-mender/example-state-scripts/files', 'SESSIONTYPE': 'gnome-session', 'COMPIZ_CONFIG_PROFILE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge:unity-gtk-module', 'LC_NAME': 'nb_NO.UTF-8', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'QT_ACCESSIBILITY': '1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_MENU_PREFIX': 'gnome-', 'QT_LINUX_ACCESSIBILITY_ALWAYS_ON': '1', 'LC_ALL': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', '_': '/home/affe/mendersoftware/poky/bitbake/bin/bitbake', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'BBPATH': '/home/affe/mendersoftware/poky/build', 'XDG_SEAT': 'seat0', 'DESKTOP_SESSION': 'ubuntu', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'UNITY_HAS_3D_SUPPORT': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-IWr6W55r2y', 'LANGUAGE': 'en_US', 'LC_MEASUREMENT': 'nb_NO.UTF-8', 'UNITY_DEFAULT_PROFILE': 'unity', 'GDMSESSION': 'ubuntu', 'LC_TIME': 'nb_NO.UTF-8', 'GDM_LANG': 'en_US', 'UPSTART_INSTANCE': '', 'LC_ADDRESS': 'nb_NO.UTF-8', 'GTK2_MODULES': 'overlay-scrollbar', 'INSTANCE': 'Unity', 'GTK_IM_MODULE': 'ibus', 'LANG': 'en_US.UTF-8'}, ['/home/affe/mendersoftware/poky/bitbake/bin/bitbake', 'mender-ezgui']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['buildTargets', ['mender-ezgui'], 'build']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 26712 at 2018-05-08 13:23:44.001919 ---
+Started bitbake server pid 26712
+DEBUG: Found bblayers.conf (/home/affe/mendersoftware/poky/build/conf/bblayers.conf)
+DEBUG: Adding layer /home/affe/mendersoftware/poky/openembedded-core/meta
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-poky
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-yocto-bsp
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-toradex-nxp
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-toradex-bsp-common
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-openembedded/meta-oe
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-openembedded/meta-python
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-qt5
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-freescale
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-freescale-3rdparty
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-ezgui
+DEBUG: Adding layer /home/affe/mendersoftware/meta-mender/meta-mender-core
+DEBUG: Adding layer /home/affe/mendersoftware/meta-mender/meta-mender-toradex-nxp
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:741: including conf/abi_version.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:742: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:743: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:744: including conf/local.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:745: including conf/multiconfig/default.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:746: including conf/machine/colibri-imx7-mender.conf
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-toradex-nxp/conf/machine/colibri-imx7-mender.conf:6: including conf/machine/colibri-imx7.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale-3rdparty/conf/machine/colibri-imx7.conf:9: including conf/machine/include/imx-base.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:3: including conf/machine/include/fsl-default-settings.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:4: including conf/machine/include/fsl-default-versions.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:6: including conf/machine/include/utilities.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale-3rdparty/conf/machine/colibri-imx7.conf:10: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:747: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:748: including conf/distro/poky.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:100: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:101: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:102: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:749: including conf/distro/defaultsetup.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:750: including conf/documentation.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:751: including conf/licenses.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:752: including conf/sanity.conf
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/patch.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/terminal.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/staging.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/mirrors.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/utils.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/utility-tasks.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/metadata_scm.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/logging.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass (from configuration INHERITs:0)
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:255: including mender-setup-grub.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:256: including mender-setup-image.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:257: including mender-setup-install.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:258: including mender-setup-systemd.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:259: including mender-setup-ubi.inc
+Entering server connection loop
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:260: including mender-setup-uboot.inc
+DEBUG: Inheriting /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-full-ubi.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/packagedata.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/chrpath.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/insane.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/linuxloader.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/affe/mendersoftware/poky/build/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/affe/mendersoftware/poky/build/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'debug_domains': [], 'profile': False, 'postfile': [], 'force': False, 'extra_assume_provided': [], 'abort': True, 'dry_run': False, 'verbose': False, 'invalidate_stamp': None, 'prefile': [], 'debug': 0, 'server_timeout': None, 'dump_signatures': []}, {'XAUTHORITY': '/home/affe/.Xauthority', 'GDMSESSION': 'ubuntu', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'UNITY_DEFAULT_PROFILE': 'unity', 'LC_MONETARY': 'nb_NO.UTF-8', 'LC_NUMERIC': 'nb_NO.UTF-8', 'GDM_LANG': 'en_US', 'IM_CONFIG_PHASE': '1', 'SHLVL': '1', 'UPSTART_JOB': 'unity-settings-daemon', 'VTE_VERSION': '4205', 'LC_MEASUREMENT': 'nb_NO.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'WINDOWID': '77594634', 'INSTANCE': 'Unity', 'GTK_MODULES': 'gail:atk-bridge:unity-gtk-module', 'GNOME_KEYRING_PID': '', 'DESKTOP_SESSION': 'ubuntu', 'LC_PAPER': 'nb_NO.UTF-8', 'JOB': 'gnome-session', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/affe', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop', 'UNITY_HAS_3D_SUPPORT': 'true', 'QT_IM_MODULE': 'ibus', 'LANGUAGE': 'en_US', 'GNOME_KEYRING_CONTROL': '', 'BUILDDIR': '/home/affe/mendersoftware/poky/build', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg', 'UPSTART_INSTANCE': '', 'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GTK2_MODULES': 'overlay-scrollbar', 'CLUTTER_IM_MODULE': 'xim', 'LANG': 'en_US.UTF-8', 'BBPATH': '/home/affe/mendersoftware/poky/build', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-IWr6W55r2y', 'UPSTART_EVENTS': 'started starting', 'XDG_SEAT': 'seat0', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'LC_TELEPHONE': 'nb_NO.UTF-8', 'LC_TIME': 'nb_NO.UTF-8', 'LC_NAME': 'nb_NO.UTF-8', 'OLDPWD': '/home/affe/mendersoftware/meta-mender/meta-mender-demo/recipes-mender/example-state-scripts', 'XMODIFIERS': '@im=ibus', 'DISPLAY': ':0', 'XDG_RUNTIME_DIR': '/run/user/1000', 'USER': 'affe', 'PATH': '/home/affe/mendersoftware/poky/scripts:/home/affe/mendersoftware/poky/bitbake/bin:/usr/local/go/bin:/home/affe/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'UPSTART_SESSION': 'unix:abstract=/com/ubuntu/upstart-session/1000/5174', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', '_': '/home/affe/mendersoftware/poky/bitbake/bin/bitbake', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'HOME': '/home/affe', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'affe', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'QT_ACCESSIBILITY': '1', 'GPG_AGENT_INFO': '/home/affe/.gnupg/S.gpg-agent:0:1', 'XDG_SESSION_DESKTOP': 'ubuntu', 'QT_LINUX_ACCESSIBILITY_ALWAYS_ON': '1', 'XDG_SESSION_ID': 'c2', 'TERM': 'xterm-256color', 'LC_ADDRESS': 'nb_NO.UTF-8', 'XDG_VTNR': '7', 'QT4_IM_MODULE': 'xim', 'SESSIONTYPE': 'gnome-session', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_MENU_PREFIX': 'gnome-', 'PWD': '/home/affe/mendersoftware/meta-mender/meta-mender-demo/recipes-mender/example-state-scripts/files', 'LC_IDENTIFICATION': 'nb_NO.UTF-8', 'COMPIZ_CONFIG_PROFILE': 'ubuntu', 'XDG_CURRENT_DESKTOP': 'Unity', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/affe:@/tmp/.ICE-unix/5601,unix/affe:/tmp/.ICE-unix/5601', 'LESSOPEN': '| /usr/bin/lesspipe %s'}, ['/home/affe/mendersoftware/poky/bitbake/bin/bitbake', 'mender-ezgui']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['buildTargets', ['mender-ezgui'], 'build']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 29539 at 2018-05-08 13:24:28.612101 ---
+Started bitbake server pid 29539
+DEBUG: Found bblayers.conf (/home/affe/mendersoftware/poky/build/conf/bblayers.conf)
+DEBUG: Adding layer /home/affe/mendersoftware/poky/openembedded-core/meta
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-poky
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-yocto-bsp
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-toradex-nxp
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-toradex-bsp-common
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-openembedded/meta-oe
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-openembedded/meta-python
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-qt5
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-freescale
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-freescale-3rdparty
+DEBUG: Adding layer /home/affe/mendersoftware/poky/meta-ezgui
+DEBUG: Adding layer /home/affe/mendersoftware/meta-mender/meta-mender-core
+DEBUG: Adding layer /home/affe/mendersoftware/meta-mender/meta-mender-toradex-nxp
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:741: including conf/abi_version.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:742: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:743: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:744: including conf/local.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:745: including conf/multiconfig/default.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:746: including conf/machine/colibri-imx7-mender.conf
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-toradex-nxp/conf/machine/colibri-imx7-mender.conf:6: including conf/machine/colibri-imx7.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale-3rdparty/conf/machine/colibri-imx7.conf:9: including conf/machine/include/imx-base.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:3: including conf/machine/include/fsl-default-settings.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:4: including conf/machine/include/fsl-default-versions.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale/conf/machine/include/imx-base.inc:6: including conf/machine/include/utilities.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-freescale-3rdparty/conf/machine/colibri-imx7.conf:10: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:747: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:748: including conf/distro/poky.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:100: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:101: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/meta-poky/conf/distro/poky.conf:102: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:749: including conf/distro/defaultsetup.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:750: including conf/documentation.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:751: including conf/licenses.conf
+DEBUG: CONF /home/affe/mendersoftware/poky/openembedded-core/meta/conf/bitbake.conf:752: including conf/sanity.conf
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/patch.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/terminal.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/staging.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/mirrors.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/utils.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/utility-tasks.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/metadata_scm.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/logging.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass (from configuration INHERITs:0)
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:255: including mender-setup-grub.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:256: including mender-setup-image.inc
+Entering server connection loop
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:257: including mender-setup-install.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:258: including mender-setup-systemd.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:259: including mender-setup-ubi.inc
+DEBUG: CONF /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-setup.bbclass:260: including mender-setup-uboot.inc
+DEBUG: Inheriting /home/affe/mendersoftware/meta-mender/meta-mender-core/classes/mender-full-ubi.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/packagedata.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/chrpath.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/insane.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/linuxloader.bbclass (from /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/affe/mendersoftware/poky/openembedded-core/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/affe/mendersoftware/poky/build/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/affe/mendersoftware/poky/build/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'prefile': [], 'force': False, 'postfile': [], 'invalidate_stamp': None, 'dry_run': False, 'verbose': False, 'dump_signatures': [], 'abort': True, 'profile': False, 'server_timeout': None, 'debug_domains': [], 'debug': 0, 'extra_assume_provided': []}, {'LANG': 'en_US.UTF-8', 'BBPATH': '/home/affe/mendersoftware/poky/build', 'XDG_SESSION_ID': 'c2', 'DISPLAY': ':0', 'LC_NUMERIC': 'nb_NO.UTF-8', 'SHELL': '/bin/bash', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'JOB': 'gnome-session', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop', 'SESSION_MANAGER': 'local/affe:@/tmp/.ICE-unix/5601,unix/affe:/tmp/.ICE-unix/5601', 'LC_ALL': 'en_US.UTF-8', 'COMPIZ_CONFIG_PROFILE': 'ubuntu', 'GPG_AGENT_INFO': '/home/affe/.gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/home/affe/.Xauthority', 'UPSTART_INSTANCE': '', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'GTK_MODULES': 'gail:atk-bridge:unity-gtk-module', 'LC_PAPER': 'nb_NO.UTF-8', 'LC_TELEPHONE': 'nb_NO.UTF-8', 'LC_ADDRESS': 'nb_NO.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'UNITY_DEFAULT_PROFILE': 'unity', 'TERM': 'xterm-256color', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/affe', 'QT4_IM_MODULE': 'xim', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GNOME_KEYRING_PID': '', 'UPSTART_EVENTS': 'started starting', 'UPSTART_SESSION': 'unix:abstract=/com/ubuntu/upstart-session/1000/5174', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'XDG_VTNR': '7', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'LANGUAGE': 'en_US', 'LC_TIME': 'nb_NO.UTF-8', 'UNITY_HAS_3D_SUPPORT': 'true', 'QT_LINUX_ACCESSIBILITY_ALWAYS_ON': '1', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'QT_IM_MODULE': 'ibus', 'XDG_SESSION_TYPE': 'x11', 'IM_CONFIG_PHASE': '1', 'USER': 'affe', 'LC_MONETARY': 'nb_NO.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-IWr6W55r2y', 'LC_NAME': 'nb_NO.UTF-8', 'VTE_VERSION': '4205', 'HOME': '/home/affe', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'CLUTTER_IM_MODULE': 'xim', 'SHLVL': '1', 'XDG_CURRENT_DESKTOP': 'Unity', 'GDM_LANG': 'en_US', 'BUILDDIR': '/home/affe/mendersoftware/poky/build', 'LOGNAME': 'affe', 'XMODIFIERS': '@im=ibus', 'SESSIONTYPE': 'gnome-session', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'OLDPWD': '/home/affe/mendersoftware/meta-mender/meta-mender-demo/recipes-mender/example-state-scripts', 'GNOME_KEYRING_CONTROL': '', 'XDG_SEAT': 'seat0', 'GTK2_MODULES': 'overlay-scrollbar', 'INSTANCE': 'Unity', 'LC_MEASUREMENT': 'nb_NO.UTF-8', 'PWD': '/home/affe/mendersoftware/meta-mender/meta-mender-demo/recipes-mender/example-state-scripts/files', 'LC_IDENTIFICATION': 'nb_NO.UTF-8', 'QT_ACCESSIBILITY': '1', 'UPSTART_JOB': 'unity-settings-daemon', '_': '/home/affe/mendersoftware/poky/bitbake/bin/bitbake', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_SESSION_DESKTOP': 'ubuntu', 'PATH': '/home/affe/mendersoftware/poky/scripts:/home/affe/mendersoftware/poky/bitbake/bin:/usr/local/go/bin:/home/affe/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'GTK_IM_MODULE': 'ibus', 'WINDOWID': '77594634', 'DESKTOP_SESSION': 'ubuntu'}, ['/home/affe/mendersoftware/poky/bitbake/bin/bitbake', 'mender-ezgui']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['buildTargets', ['mender-ezgui'], 'build']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
