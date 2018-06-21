@@ -1,0 +1,27 @@
+
+m 8cbe36ba0ff3c98adeeef731a0b6bb6013c3563a Mon Sep 17 00:00:00 2001
+From: Marcin Pasinski <marcin.pasinski@northern.tech>
+Date: Thu, 8 Feb 2018 13:15:21 +0100
+Subject: [PATCH] Use 7" touch display as the default one.
+
+Signed-off-by: Marcin Pasinski <marcin.pasinski@northern.tech>
+---
+ include/configs/colibri_imx7.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/include/configs/colibri_imx7.h b/include/configs/colibri_imx7.h
+index ea04762b49..b963762e25 100644
+--- a/include/configs/colibri_imx7.h
++++ b/include/configs/colibri_imx7.h
+@@ -147,7 +147,7 @@
+ 	"splashpos=m,m\0" \
+ 	"videomode=video=ctfb:x:640,y:480,depth:18,pclk:39722,le:48,ri:16,up:33,lo:10,hs:96,vs:2,sync:0,vmode:0\0" \
+ 	"updlevel=2\0" \
+-	"vidargs=video=mxsfb:640x480M-16@60"
++	"vidargs=video=mxsfb:800x480M-16@60,pixclockpol=1"
+ 
+ /* Miscellaneous configurable options */
+ #define CONFIG_SYS_LONGHELP
+-- 
+2.14.1
+

@@ -1,0 +1,26 @@
+From ebbcef466e912dbb33d418e6b6cb2a5819f22bea Mon Sep 17 00:00:00 2001
+From: Marcin Pasinski <marcin.pasinski@northern.tech>
+Date: Wed, 14 Feb 2018 18:03:28 +0100
+Subject: [PATCH] Enable touch screen for Colibri iMX7
+
+Signed-off-by: Marcin Pasinski <marcin.pasinski@northern.tech>
+---
+ arch/arm/boot/dts/imx7-colibri-eval-v3.dtsi | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/arm/boot/dts/imx7-colibri-eval-v3.dtsi b/arch/arm/boot/dts/imx7-colibri-eval-v3.dtsi
+index 9070901b6a0e..5c0a6957d4d1 100644
+--- a/arch/arm/boot/dts/imx7-colibri-eval-v3.dtsi
++++ b/arch/arm/boot/dts/imx7-colibri-eval-v3.dtsi
+@@ -156,7 +156,7 @@
+ 		reg = <0x4a>;
+ 		interrupt-parent = <&gpio2>;
+ 		interrupts = <15 IRQ_TYPE_EDGE_FALLING>;
+-		status = "disabled";
++		status = "okay";
+ 	};
+ 
+ 	touch: touchrevf0710a@10 {
+-- 
+2.14.1
+

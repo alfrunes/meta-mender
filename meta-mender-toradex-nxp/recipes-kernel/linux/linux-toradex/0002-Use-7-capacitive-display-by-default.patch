@@ -1,0 +1,26 @@
+From 11a1f1c7718efdb407d6f64044bea23e617546bc Mon Sep 17 00:00:00 2001
+From: Marcin Pasinski <marcin.pasinski@northern.tech>
+Date: Thu, 8 Feb 2018 13:07:35 +0100
+Subject: [PATCH] Use 7" capacitive display by default.
+
+Signed-off-by: Marcin Pasinski <marcin.pasinski@northern.tech>
+---
+ arch/arm/boot/dts/imx7-colibri-eval-v3.dtsi | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/arm/boot/dts/imx7-colibri-eval-v3.dtsi b/arch/arm/boot/dts/imx7-colibri-eval-v3.dtsi
+index 00e3fa01c18b..939e35a06540 100644
+--- a/arch/arm/boot/dts/imx7-colibri-eval-v3.dtsi
++++ b/arch/arm/boot/dts/imx7-colibri-eval-v3.dtsi
+@@ -189,7 +189,7 @@
+ 		bus-width = <18>;
+ 
+ 		display-timings {
+-			native-mode = <&timing_vga>;
++			native-mode = <&timing_wvga2>;
+ 
+ 			/* Standard VGA timing */
+ 			timing_vga: 640x480 {
+-- 
+2.14.1
+
